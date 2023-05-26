@@ -69,6 +69,7 @@ settings:
   ##
   network: "mainnet"
   executionEndpoint: ""
+  consensusEndpoint: ""
   sentryDsn: ""
 
   ## Credentials

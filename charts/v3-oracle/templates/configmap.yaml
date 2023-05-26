@@ -12,3 +12,5 @@ data:
   CONSENSUS_ENDPOINT: {{ .Values.settings.consensusEndpoint | quote }}
   DATABASE: "/data/oracle.db"
   RSA_PRIVATE_KEY_PATH: "/secret/rsakey"
+  GOERLI_TRUSTED_RELAY_URLS: {{ .Values.settings.goerliTrustedRelayUrls | quote }}
+  VAULT_FEE_MAX_BPS: {{ .Values.settings.vaultFeeMaxBPS | quote }}

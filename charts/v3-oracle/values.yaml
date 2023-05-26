@@ -52,7 +52,7 @@ serviceAccount:
 image:
   registry: "europe-west4-docker.pkg.dev"
   repository: "stakewiselabs/private/v3-oracle"
-  tag: "v0.1.0"
+  tag: "v0.3.0.alpha"
   pullPolicy: IfNotPresent
   pullSecrets: [ ]
 
@@ -117,6 +117,12 @@ settings:
   ipfsPinataApiKey: ""
   ipfsPinataSecretKey: ""
   ipfsWeb3StorageToken: ""
+
+  goerliTrustedRelayUrls: "https://boost-relay-goerli.flashbots.net/,https://builder-relay-goerli.blocknative.com/"
+
+  # Used in avg-reward-per-second calculation
+  # 1 percent = 100 bps (basis points)
+  vaultFeeMaxBPS: "1500"
 
 ## If false, data ownership will not be reset at startup
 ## This allows the geth node to be run with an arbitrary user
